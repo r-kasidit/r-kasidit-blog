@@ -3,7 +3,7 @@ title: 'Welcome Bee starter'
 date: 2020-07-04 12:21:13
 category: 'development'
 thumbnail: './images/hello.png'
-draft: false
+draft: true
 ---
 
 ![](./images/hello.png)
@@ -73,7 +73,7 @@ _code_
 
 **bold** _italic_
 
-## 4. Support emoji :rocket:
+## 4. Support emoji :rocket
 
 Based on [emojione](https://github.com/emojione/emojione) :pray:
 
