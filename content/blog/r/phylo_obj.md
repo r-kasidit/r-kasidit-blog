@@ -6,13 +6,14 @@ tags:
   - ggplot2
   - ggtext
   - data vistualization
-draft: true
+draft: false
 ---
 
 ในการจะทำอะไร็ตามจาก phylogeny ใน r หลัก ๆ จะทำงานผ่าน obj phylo นี้ เช่นการ visuya;ization tree การยุบ-รวม tree ต่าง ๆ
 
 >object ประเภทนี้ มาจาก แพจเกจ `ape`
 
+![](images/phylo_obj_diagram.jpg)
 ประกอบไปด้วยอย่างน้อย 4 ส่วน ได้แก่
 
 - edge
