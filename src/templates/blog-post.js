@@ -7,13 +7,16 @@ import { Head } from '../components/head'
 import { PostTitle } from '../components/post-title'
 import { PostDate } from '../components/post-date'
 import { PostContainer } from '../components/post-container'
-import { SocialShare } from '../components/social-share'
-import { SponsorButton } from '../components/sponsor-button'
+//import { SocialShare } from '../components/social-share'
+//import { SponsorButton } from '../components/sponsor-button'
 import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
-import { Disqus } from '../components/disqus'
-import { Utterances } from '../components/utterances'
+//import { Disqus } from '../components/disqus'
+//import { Utterances } from '../components/utterances'
 import * as ScrollManager from '../utils/scroll'
+
+import Fbshare from '../components/fbshare'
+import Fbcomment from '../components/fbcomment'
 
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
@@ -29,9 +32,12 @@ export default ({ data, pageContext, location }) => {
   const { title, comment, siteUrl, author, sponsor } = metaData
   const { disqusShortName, utterances } = comment
   const { title: postTitle, date, thumbnail } = post.frontmatter
-  const thumbnailSrc = (thumbnail != null && thumbnail.childImageSharp != null && thumbnail.childImageSharp.fixed != null)
-    ? `${siteUrl}${thumbnail.childImageSharp.fixed.src}`
-    : undefined
+  const thumbnailSrc =
+    thumbnail != null &&
+    thumbnail.childImageSharp != null &&
+    thumbnail.childImageSharp.fixed != null
+      ? `${siteUrl}${thumbnail.childImageSharp.fixed.src}`
+      : undefined
 
   return (
     <Layout location={location} title={title}>
@@ -43,13 +49,17 @@ export default ({ data, pageContext, location }) => {
       <PostTitle title={postTitle} />
       <PostDate date={date} />
       <PostContainer html={post.html} />
-      <SocialShare title={postTitle} author={author} />
+
+      {/*<SocialShare title={postTitle} author={author} />
       {!!sponsor.buyMeACoffeeId && (
         <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
-      )}
+      )} */}
+      <Fbshare />
+      <Fbcomment />
       <Elements.Hr />
       <Bio />
       <PostNavigator pageContext={pageContext} />
+      {/*
       {!!disqusShortName && (
         <Disqus
           post={post}
@@ -58,7 +68,8 @@ export default ({ data, pageContext, location }) => {
           slug={pageContext.slug}
         />
       )}
-      {!!utterances && <Utterances repo={utterances} />}
+            {!!utterances && <Utterances repo={utterances} />}
+            */}
     </Layout>
   )
 }
