@@ -1,4 +1,5 @@
 ---
+
 title: ทำความรู้จักกับ phylo object
 date: 2020-6-20 16:05:75
 category: r
@@ -7,13 +8,13 @@ tags:
 - ggplot2
 - ggtext
 - data vistualization
-draft: true
+  draft: true
 
 ในการจะทำอะไร็ตามจาก phylogeny ใน r หลัก ๆ จะทำงานผ่าน obj phylo นี้ เช่นการ visuya;ization tree การยุบ-รวม tree ต่าง ๆ
 
 > object ประเภทนี้ มาจาก แพจเกจ `ape`
 
-![](images/phylo_obj_diagram.jpg)
+![](images/phylo_obj_diagram.png)
 ประกอบไปด้วยอย่างน้อย 4 ส่วน ได้แก่
 
 - edge
@@ -26,7 +27,7 @@ draft: true
 ```
 library(ape)
 set.seed(99)
-tree <- rtree(5) #ฟังชั่นสุ่มสร้าง tree ขึ้นมาโดยที่มี tip = 5
+tree <- rtree(5) # ฟังชั่นสุ่มสร้าง tree ขึ้นมาโดยที่มี tip = 5
 str(tree)
 ```
 

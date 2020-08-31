@@ -40,6 +40,7 @@
     "katex": "^0.11.1",
     "lodash": "^4.17.19",
     "node-sass": "^4.14.1",
+    "oauth-sign": "^0.9.0",
     "prismjs": "^1.21.0",
     "query-string": "^6.13.1",
     "react": "^16.13.1",
