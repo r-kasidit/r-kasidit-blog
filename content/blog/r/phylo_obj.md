@@ -19,10 +19,12 @@ draft: true
 
 เราจะให้ r แสดงได้จาก หากใครมี rstudio ก็ดูได้จากแท๊บ environment ได้เลย หรือจากฟังก์ชั้น `str()`
 
+> `rtree(5)` เป็นฟังชั่นสุ่มสร้าง tree ขึ้นมาโดยที่มี tip = 5
+
 ```
 library(ape)
 set.seed(99)
-tree <- rtree(5) # ฟังชั่นสุ่มสร้าง tree ขึ้นมาโดยที่มี tip = 5
+tree <- rtree(5)
 str(tree)
 ```
 
