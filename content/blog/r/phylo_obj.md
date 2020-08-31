@@ -3,11 +3,11 @@ title: ทำความรู้จักกับ phylo object
 date: 2020-6-20 16:05:75
 category: r
 tags:
-  - ggplot2
-  - ggtext
-  - data vistualization
-draft: false
----
+
+- ggplot2
+- ggtext
+- data vistualization
+draft: true
 
 ในการจะทำอะไร็ตามจาก phylogeny ใน r หลัก ๆ จะทำงานผ่าน obj phylo นี้ เช่นการ visuya;ization tree การยุบ-รวม tree ต่าง ๆ
 

@@ -6,7 +6,7 @@ tags:
   - ggplot2
   - ggtext
   - data vistualization
-draft: false
+draft: true
 ---
 
 - [การติดตั้ง](#การติดตั้ง)

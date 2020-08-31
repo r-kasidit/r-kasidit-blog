@@ -2,7 +2,7 @@
 title: 'การพลอตกราฟจากการวิเคราะห์ post hoc และ ANOVA'
 date: 2020-5-16 16:21:13
 category:  'r'
-draft: false
+draft: true
 ---
 
 
