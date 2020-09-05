@@ -7,7 +7,7 @@ import { Head } from '../components/head'
 import { PostTitle } from '../components/post-title'
 import { PostDate } from '../components/post-date'
 import { PostContainer } from '../components/post-container'
-//import { SocialShare } from '../components/social-share'
+import { SocialShare } from '../components/social-share'
 //import { SponsorButton } from '../components/sponsor-button'
 import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
@@ -15,8 +15,8 @@ import { PostNavigator } from '../components/post-navigator'
 //import { Utterances } from '../components/utterances'
 import * as ScrollManager from '../utils/scroll'
 
-import Fbshare from '../components/fbshare'
-import Fbcomment from '../components/fbcomment'
+//import Fbshare from '../components/fbshare'
+//import Fbcomment from '../components/fbcomment'
 
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
@@ -50,12 +50,10 @@ export default ({ data, pageContext, location }) => {
       <PostDate date={date} />
       <PostContainer html={post.html} />
 
-      {/*<SocialShare title={postTitle} author={author} />
-      {!!sponsor.buyMeACoffeeId && (
+      <SocialShare title={postTitle} author={author} />
+      {/*{!!sponsor.buyMeACoffeeId && (
         <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
-      )} */}
-      <Fbshare />
-      <Fbcomment />
+      )}*/}
       <Elements.Hr />
       <Bio />
       <PostNavigator pageContext={pageContext} />
